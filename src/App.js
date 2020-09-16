@@ -6,21 +6,23 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      name: "Tiger"
+    }
     this.handleClick = this.handleClick.bind(this)
 
 
   }
   handleClick() {
-    this.setState({ Animal: this.state.Animal })
+    this.setState({ Animal: this.state.animal })
   }
 
   render() {
     console.log("tiger")
     return (
       <div>
-        <button onClick={this.handleClick} > click me  </button>
-        <h1>tiger {this.state.Animal} </h1>
+        <button onClick={this.handleClick}> click me  </button>
+        <h1>{this.state.name}</h1>
 
       </div>
     );
