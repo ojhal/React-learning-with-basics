@@ -20,9 +20,10 @@ class App extends Component {
     return (
       <div>
 
-        <button onClick={this.handleClick}> Tiger </button>
-
-
+        <button value="Tiger" onClick={this.handleClick}> Tiger </button>
+        <button value="Lion" onClick={this.handleClick}> Lion </button>
+        <button value="Elephant" onClick={this.handleClick}> Elephant </button>
+        <button value="Dog" onClick={this.handleClick}> Dog </button>
 
       </div>
     );
